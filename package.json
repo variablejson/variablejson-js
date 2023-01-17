@@ -1,0 +1,25 @@
+{
+  "name": "vjson",
+  "version": "0.1.0-beta",
+  "description": "JSON parser with in-JSON variables",
+  "main": "vjson.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noahdavis319/vjson-js.git"
+  },
+  "keywords": [
+    "json"
+  ],
+  "author": "Noah Davis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/noahdavis319/vjson-js/issues"
+  },
+  "homepage": "https://github.com/noahdavis319/vjson-js#readme",
+  "devDependencies": {
+    "jest": "^29.3.1"
+  }
+}
