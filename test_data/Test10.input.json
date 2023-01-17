@@ -1,0 +1,6 @@
+{
+    "$vars": {
+        "name": "John Doe"
+    },
+    "name": "$(name)
+}

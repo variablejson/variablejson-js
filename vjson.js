@@ -31,17 +31,17 @@ class VariableJsonParser {
   }
 
   parse() {
-    if (this.variables && Object.keys(this.variables).length == 0) {
-      return this.jsonObject;
+    if (this.variables === undefined || (this.variables && Object.keys(this.variables).length == 0)) {
+      return JSON.stringify(this.jsonObject);
     }
 
     this.#parseDFS(this.jsonObject, this.outObject);
 
-    if (this.options.KeepVars) {
+    if (this.options.keepVars) {
       this.outObject[this.options.emittedName] = this.variables;
     }
 
-    return this.outObject;
+    return JSON.stringify(this.outObject);
   }
 
   #parseDFS(node, outNode, path = "") {
@@ -62,7 +62,7 @@ class VariableJsonParser {
       this.recurse = 0;
       var findRefInfo = this.#findRef(isRefInfo.value);
       if (!findRefInfo.found) {
-        throw new Error("Could not find reference: " + isRefInfo);
+        throw new ReferenceError("Variable " + isRefInfo.value + " not found");
       } else {
         value = findRefInfo.value;
       }
@@ -137,7 +137,7 @@ class VariableJsonParser {
   #findRefDFS(node, path, key) {
     this.recurse++;
     if (this.recurse > this.options.maxRecurse) {
-      throw new Error("Max recurse reached");
+      throw new RangeError("Max recursion reached");
     }
 
     var returnObj = {
@@ -172,10 +172,10 @@ class VariableJsonParser {
               return returnObj;
             }
           } else {
-            throw new Error("Index " + index + " out of range.");
+            throw new RangeError("Index " + index + " out of range");
           }
         } else {
-          throw new Error("Index \"key\" is not an integer.");
+          throw new TypeError("Index \"key\" is not an integer");
         }
       }
     } else if (typeof node == "object") {
@@ -190,7 +190,7 @@ class VariableJsonParser {
             return this.#findRefDFS(obj, path.slice(1), key);
           }
           else {
-            throw new Error("Invalid path: " + path.join(this.options.delimiter) + this.options.delimiter + key);
+            throw new ReferenceError("Invalid path " + path.join(this.options.delimiter) + this.options.delimiter + key);
           }
         }
       } else {

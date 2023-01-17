@@ -1,0 +1,7 @@
+{
+  "$vars": {
+    "hello": "world!"
+  },
+  "fizz": "$(buzz)",
+  "buzz": "$(hello)"
+}

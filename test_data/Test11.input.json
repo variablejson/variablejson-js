@@ -1,0 +1,10 @@
+{
+  "$vars": {
+    "john.name": "John Doe",
+    "john": {
+      "age": 0
+    }
+  },
+  "name": "$(john.name)",
+  "age": "$(john.age)"
+}

@@ -1,0 +1,28 @@
+{
+  "a": "hello, world!",
+  "b": 1,
+  "c": true,
+  "d": null,
+  "e": ["hello, world!", 1, true, null],
+  "f": {
+    "g": "hello, world!",
+    "h": 1,
+    "i": true,
+    "j": null,
+    "k": ["hello, world!", 1, true, null]
+  },
+  "l": [
+    "hello, world!",
+    1,
+    true,
+    null,
+    ["hello, world!", 1, true, null],
+    {
+      "g": "hello, world!",
+      "h": 1,
+      "i": true,
+      "j": null,
+      "k": ["hello, world!", 1, true, null]
+    }
+  ]
+}
