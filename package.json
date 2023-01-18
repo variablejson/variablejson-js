@@ -1,5 +1,5 @@
 {
-  "name": "vjson",
+  "name": "variable-json",
   "version": "0.1.0-beta",
   "description": "JSON parser with in-JSON variables",
   "main": "vjson.js",

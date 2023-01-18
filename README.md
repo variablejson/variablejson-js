@@ -131,10 +131,12 @@ This will throw an exception because `fizz` references a variable that does not 
 VariableJson only parses and produces JSON, it does not provide a mechanism for deserializing the JSON into an object. You can use `JSON.parse` or any other JSON library to deserialize the JSON into an object.
 
 ```javascript
+const vjson = require('variable-json');
+
 const fs = require('fs');
 
 const jsonFileContents = fs.readFile("path/to/file.json").toString();
-const parsedJson = VariableJson.parse(json, options);
+const parsedJson = vjson.parse(json, options);
 ```
 
 ### VariableJsonOptions
@@ -142,14 +144,12 @@ const parsedJson = VariableJson.parse(json, options);
 You can specify some options when parsing JSON using the `VariableJsonOptions` class.
 
 ```javascript
-const fs = require('fs');
-
 const jsonFileContents = fs.readFile("path/to/file.json").toString();
 
-var options = new VariableJson.VariableJsonOptions();
+var options = new vjson.VariableJsonOptions();
 options.variableKey = "myVars";
 
-const convertedJson = VariableJson.parse(jsonFileContents, options);
+const convertedJson = vjson.parse(jsonFileContents, options);
 ```
 
 The following options are available:
@@ -180,14 +180,12 @@ While vjson itself is valid JSON, it uses special markers to denote variables. T
 If you don't want to use `$vars` as the variable container, you can use the `VariableJsonOptions` class to specify a different variable container name.
 
 ```javascript
-const fs = require('fs');
-
 const jsonFileContents = fs.readFile("path/to/file.json").toString();
 
-var options = new VariableJson.VariableJsonOptions();
+var options = new vjson.VariableJsonOptions();
 options.variableKey = "myVars";
 
-const parsedJson = VariableJson.parse(jsonFileContents, options);
+const parsedJson = vjson.parse(jsonFileContents, options);
 ```
 
 In the above example, this will cause variable lookups to be performed in the `myVars` object instead of the `$vars` object.
