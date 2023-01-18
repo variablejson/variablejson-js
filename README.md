@@ -1,6 +1,6 @@
 # VariableJson (vjson)
 
-[![GitHub](https://img.shields.io/github/license/noahdavis319/vjson-js)](https://github.com/noahdavis319/vjson-js/blob/main/LICENSE)
+[![GitHub](https://img.shields.io/github/license/noahdavis319/vjson-js)](https://github.com/noahdavis319/vjson-js/blob/main/LICENSE) ![npm](https://img.shields.io/npm/v/variable-json) ![npm bundle size](https://img.shields.io/bundlephobia/min/variable-json)
 
 vjson is a JSON parser that adds support for variables.
 
