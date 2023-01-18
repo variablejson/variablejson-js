@@ -1,10 +1,11 @@
 {
   "name": "variable-json",
-  "version": "0.1.0-beta",
+  "version": "0.1.1-beta",
   "description": "JSON parser with in-JSON variables",
-  "main": "vjson.js",
+  "main": "vjson.min.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "prepare": "uglifyjs vjson.js -o vjson.min.js"
   },
   "repository": {
     "type": "git",
