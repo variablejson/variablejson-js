@@ -4,6 +4,10 @@
 
 vjson is a JSON parser that adds support for variables.
 
+Supported languages
+ - [C#](https://github.com/noahdavis319/vjson)
+ - [JavaScript](https://github.com/noahdavis319/vjson-js)
+
 ### Examples
 
 The simplest example is
