@@ -1,6 +1,6 @@
 {
   "name": "variable-json",
-  "version": "0.1.1-beta",
+  "version": "0.1.2-beta",
   "description": "JSON parser with in-JSON variables",
   "main": "vjson.min.js",
   "scripts": {
@@ -22,5 +22,11 @@
   "homepage": "https://github.com/noahdavis319/vjson-js#readme",
   "devDependencies": {
     "jest": "^29.3.1"
-  }
+  },
+  "files": [
+    "package.json",
+    "vjson.min.js",
+    "README.md",
+    "LICENSE"
+  ]
 }
