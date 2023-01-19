@@ -5,8 +5,9 @@
 vjson is a JSON parser that adds support for variables.
 
 Supported languages
- - [C#](https://github.com/noahdavis319/vjson)
+ - [C#](https://github.com/noahdavis319/vjson-csharp)
  - [JavaScript](https://github.com/noahdavis319/vjson-js)
+ - [Python](https://github.com/noahdavis319/vjson-python)
 
 ### Examples
 
