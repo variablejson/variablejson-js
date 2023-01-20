@@ -24,7 +24,6 @@
   },
   "files": [
     "package.json",
-    "vjson.min.js",
     "README.md",
     "LICENSE"
   ]
