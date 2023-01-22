@@ -1,6 +1,6 @@
 {
   "name": "variable-json",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "JSON parser with in-JSON variables",
   "main": "variablejson.js",
   "scripts": {
