@@ -4,7 +4,7 @@ const fs = require('fs');
 const VariableJson = require("./variablejson");
 
 function readAllText(path) {
-  return fs.readFileSync(path).toString();
+  return fs.readFileSync(path, 'utf-8');
 };
 
 test('Test1', () => {
