@@ -1,7 +1,7 @@
 const path = require('path');
 const fs = require('fs');
 
-const VariableJson = require("./vjson");
+const VariableJson = require("./variablejson");
 
 function readAllText(path) {
   return fs.readFileSync(path).toString();

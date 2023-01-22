@@ -2,13 +2,13 @@
   "name": "variable-json",
   "version": "0.1.4",
   "description": "JSON parser with in-JSON variables",
-  "main": "vjson.js",
+  "main": "variablejson.js",
   "scripts": {
     "test": "jest"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/noahdavis319/vjson-js.git"
+    "url": "git+https://github.com/variablejson/variablejson-js.git"
   },
   "keywords": [
     "json"
@@ -16,9 +16,9 @@
   "author": "Noah Davis",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/noahdavis319/vjson-js/issues"
+    "url": "https://github.com/variablejson/variablejson-js/issues"
   },
-  "homepage": "https://github.com/noahdavis319/vjson-js#readme",
+  "homepage": "https://github.com/variablejson/variablejson-js#readme",
   "devDependencies": {
     "jest": "^29.3.1"
   },
